@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Authentication Form</h3>
+    <form action="#" method="post">    
+        <label for="txtUsername">User Name</label>        
+        <input type="text" name="txtusername" placeholder="รหัสผู้ใช้" required><br><br>
+        <label for="txtPassword">Password</label>
+        <input type="password" name="txtPassword" placeholder="รหัสผ่าน" required><br><br>
+        <input type="submit" value="Login">
+        <input type="reset" value="Cancel">
+    </form>
+    <h3>Input Types Example</h3>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="txtUsername">User Name</label>
+        <input type="text" name="txtusername" placeholder="รหัสผู้ใช้" value="ruchdee" readonly disabled required><br><br>
+        <label for="txtPassword">Password</label>
+        <input type="password" name="txtPassword" placeholder="รหัสผ่าน" required><br><br>
+        <label for="txtEmail">Email</label>
+        <input type="email" name="txtEmail" placeholder="อีเมล" required ><br><br>
+        <label for="txtTel">Tel</label>
+        <input type="tel" name="txtTel" placeholder="เบอร์โทรศัพท์" ><br><br>
+        <label for="txtUrl">URL</label>
+        <input type="url" name="txtUrl" placeholder="เว็บไซต์" required><br><br>
+        <label for="txtNumber">Number</label>
+        <input type="number" name="txtNumber"><br><br>
+        <label for="txtDate">Date</label>        
+        <input type="date" name="txtDate" ><br><br>
+        <label for="txtTime">Time</label>
+        <input type="time" name="txtTime" ><br><br>
+        <label for="txtColor">Color</label>
+        <input type="color" name="txtColor" ><br><br>
+        <input type="hidden" name="txtHidden" value="Hidden Value">
+        <input type="checkbox" name="txtmeal" id="txtmeal-1">ข้าวผัด<br>
+        <input type="checkbox" name="txtmeal" id="txtmeal-2">ส้มตำ<br>
+        <input type="checkbox" name="txtmeal" id="txtmeal-3">ต้มยำ<br><br>
+        <label for="Rdomeal">Meal</label><br>
+        <input type="radio" name="Rdomeal" id="txtmeal-4">ข้าวผัด<br>
+        <input type="radio" name="Rdomeal" id="txtmeal-5">ส้มตำ<br>
+        <input type="radio" name="Rdomeal" id="txtmeal-6">ต้มยำ<br><br>
+        <label for="SelMeal">Select Meal</label>
+        <select name="SelMeal" id="SelMeal">
+            <option value="meal1">ข้าวผัด</option>
+            <option value="meal2">ส้มตำ</option>
+            <option value="meal3">ต้มยำ</option>
+        </select><br><br>
+        <label for="txtFile">File</label><br>
+        <input type="file" name="txtFile" id="txtFile">Choose File<br><br>
+        <label for="txtTextarea">Textarea</label><br>
+        <textarea name="txtTextarea" id="txtTextarea" cols="30" rows="10"></textarea><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html

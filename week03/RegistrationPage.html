@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea Fan Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Chelsea Football Ticket Registration</h1>
+        <p>สมัครสมาชิกแฟนบอลเชลซีเพื่อรับข่าวสารและตั๋วฟุตบอล</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="RegistrationPage.html">Register</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" name="fullname" type="text" required minlength="2" maxlength="50" />
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" required pattern="\+?[0-9]{9,15}" placeholder="+441234567890" />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Ticket Preferences</legend>
+                    <div>
+                        <label for="match">Favorite Match</label>
+                        <select id="match" name="match" required>
+                            <option value="">Choose a match</option>
+                            <option value="home">Chelsea vs Liverpool</option>
+                            <option value="away">Chelsea vs Arsenal</option>
+                            <option value="cup">Chelsea vs Man United</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="qty">Ticket Quantity</label>
+                        <input id="qty" name="qty" type="number" min="1" max="10" value="1" required />
+                    </div>
+                    <div>
+                        <label for="seat">Seating Preference</label>
+                        <input id="seat" name="seat" type="radio" value="lower" required />
+                        <span>Lower Tier</span>
+                        <input id="seat-upper" name="seat" type="radio" value="upper" />
+                        <span>Upper Tier</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div>
+                        <label for="newsletter">
+                            <input id="newsletter" name="newsletter" type="checkbox" />
+                            Subscribe to ticket alerts
+                        </label>
+                    </div>
+                    <div>
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="4" maxlength="200" placeholder="Tell us about your fan experience"></textarea>
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Chelsea Fan Club - ตั๋วฟุตบอลเชลซี</p>
+    </footer>
+</body>
+</html>

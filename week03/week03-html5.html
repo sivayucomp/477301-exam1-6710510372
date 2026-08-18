@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <details open>
+        <summary>Click me</summary>
+        <p>This is the content that will be shown/hidden.</p>
+    <div>
+        <p>More content inside the details element.</p>
+    </div>
+    </details>
+    <h1>datalist</h1>
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+    </datalist>
+    <h1>mark</h1>
+    <p>this is a <mark>highlighted</mark> text.</p>
+    <h1>progress</h1>
+    <label for="file">File Upload Progress:</label>
+    <progress value="70" max="100">70%</progress>
+    <h1>meter</h1>
+    <label for="disk-usage">Disk Usage:</label>
+    <meter value="2" min="0" max="10">2 out of 10</meter>
+    <h1>Time</h1>
+    <time datetime="2024-06-15T14:30">June 15, 2024, 2:30 PM</time>
+</body>
+</html>

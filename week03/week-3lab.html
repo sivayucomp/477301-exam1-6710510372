@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Contact page</h1>
+        <nav>
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Please feel free to reach out to us with any questions or feedback.</p>
+            <form action="#" method="post">
+                <label for="txtname">txtName:</label>
+                <input type="text" id="txtname" name="txtname" required maxlength="30">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+                <label for="Phone">Phone:</label>
+                <input type="tel" id="Phone" name="Phone" required pattern="[0-9]{10}" title="please enter valid your number phone"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <br>
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <label>
+                        <input type="radio" name="contactMethod" value="email" required> Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contactMethod" value="phone" required> Phone
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Cancel">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <h3>Contact Information</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

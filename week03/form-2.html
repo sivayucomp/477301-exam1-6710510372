@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semantic Layout</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif; margin:0; display:flex; flex-direction:column; min-height:100vh}
+        header{background:#0b6fa4;color:#fff;padding:1rem}
+        nav{background:#f4f4f4}
+        nav .container{display:flex;gap:1rem;align-items:center;padding:0.5rem}
+        nav a{color:#0b6fa4;text-decoration:none}
+        main{flex:1;padding:1rem}
+        footer{background:#222;color:#fff;padding:0.75rem;text-align:center}
+        .container{max-width:960px;margin:0 auto;padding:0 1rem}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Site Title</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="form.html">Forms</a>
+            <a href="semantic.html">Semantic</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <article>
+                <h2>Welcome</h2>
+                <p>This page demonstrates a simple semantic layout using <code>header</code>, <code>nav</code>, <code>main</code>, and <code>footer</code>.</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <small>&copy; 2026 Your Name</small>
+        </div>
+    </footer>
+</body>
+</html>
+ 
