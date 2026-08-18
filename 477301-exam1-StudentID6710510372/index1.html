@@ -78,7 +78,27 @@
     <li>กรอกที่อยู่จัดส่ง</li>
     <li>ชำระเงิน</li>
     <li>รอรับสินค้า</li>
-    
+    <a href="mailto:sivayu@example.com">Contact Me</a>
 </ol>
+</header>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Please feel free to reach out to us with any questions or feedback.</p>
+            <form action="#" method="post">
+                <label for="txtname">Text Name:</label>
+                <input type="text" id="txtname" name="txtname" required maxlength="30">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+                <label for="Phone">Phone:</label>
+                <input type="tel" id="Phone" name="Phone" required pattern="[0-9]{10}" title="please enter valid your number phone"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
